@@ -1,0 +1,14 @@
+
+    <a href="#" class="list-group-item clearfix" id="card-shoe" (click)="onSelected()">
+        <div class="pull-left">
+            <h4 class="list-group-item-heading" id="title">{{kick.name}}</h4>
+            <p class="list-group-item-text">{{kick.brand}}</p>
+            <p class="list-group-item-text">{{kick.model}}</p>
+            <p class="list-group-item-text">{{kick.description}}</p>
+            <p class="list-group-item-text">{{kick.color}}</p>
+            <p class="list-group-item-text">{{kick.size}}</p>
+        </div>
+        <span class="pull-right">
+            <img [src]="kick.imagePath" alt="{{kick.name}}" class="img-responsive" style="max-height: 100px;">
+        </span>
+    </a>

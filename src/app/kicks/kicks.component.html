@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-kicks-list></app-kicks-list>
+    </div>
+    <div class="col-md-7">
+        <app-kicks-detail *ngIf="selectedKick; else infoText" [kick]="selectedKick"></app-kicks-detail>
+        <ng-template #infoText><p>Please select a Kick!</p></ng-template>
+    </div>
+</div>
